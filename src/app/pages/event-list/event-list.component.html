@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>liveUP - Our Events</h2>
+  <h3  style="text-align: center;"><i>Where the flight takes off...</i></h3>
+  <div class="event-card" 
+  *ngFor="let event of events">
+    <div class="event-info">
+      <p><strong>{{event.eventTitle}}</strong></p>
+      <p>Location: {{event.location}}</p>
+      <p>Price: {{event.ticketPrice}}</p>
+    </div>
+    <div>
+      <button class="btn-edit" [routerLink]="['/edit-event', event.id]">Edit</button>
+      <button class="btn-delete" (click)="deleteEvent(event.id)">Delete</button>
+    </div>
+  </div>
+</div>

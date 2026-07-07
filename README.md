@@ -1,94 +1,59 @@
-# CampusBuzz – Campus Community Web Application
+# CampusbuzzAngular
 
-A full-stack web application built for the University of Pretoria's INF 354 module. CampusBuzz is a campus community platform that allows students to discover and engage with campus events, announcements, and resources.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.24.
 
----
+## Development server
 
-## 🚀 Tech Stack
+To start a local development server, run:
 
-| Layer | Technology |
-|---|---|
-| Frontend | Angular 17, TypeScript, HTML, CSS |
-| Backend | .NET 8 Web API (C#) |
-| Database | Microsoft SQL Server |
-| Architecture | RESTful API, MVC pattern |
-
----
-
-## ✨ Features
-
-- User registration and authentication
-- Browse and filter campus events / posts
-- Create, edit, and delete content (CRUD)
-- Responsive UI across screen sizes
-- Data validation and error handling on both frontend and backend
-
----
-
-## 📁 Project Structure
-
-```
-campusbuzz-web-app/
-│
-├── CampusBuzz.API/          # .NET 8 Web API backend
-│   ├── Controllers/         # API route handlers
-│   ├── Models/              # Data models & DTOs
-│   ├── Data/                # DbContext & migrations
-│   └── Program.cs
-│
-├── campusbuzz-frontend/     # Angular 17 frontend
-│   ├── src/
-│   │   ├── app/
-│   │   │   ├── components/  # Reusable UI components
-│   │   │   ├── services/    # HTTP service layer
-│   │   │   └── models/      # TypeScript interfaces
-│   └── angular.json
-│
-└── README.md
-```
-
----
-
-## ⚙️ Getting Started
-
-### Prerequisites
-- [.NET 8 SDK](https://dotnet.microsoft.com/download)
-- [Node.js](https://nodejs.org/) (v18+)
-- [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
-- SQL Server (or SQL Server Express)
-
-### Backend Setup
 ```bash
-cd CampusBuzz.API
-# Update connection string in appsettings.json
-dotnet ef database update
-dotnet run
-```
-API will run on `https://localhost:7001`
-
-### Frontend Setup
-```bash
-cd campusbuzz-frontend
-npm install
 ng serve
 ```
-App will run on `http://localhost:4200`
 
----
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## 🧠 Key Learning Outcomes
+## Code scaffolding
 
-- Designed and implemented a RESTful API using .NET 8
-- Connected Angular frontend to a backend via HTTP services
-- Managed database relationships and migrations with Entity Framework Core
-- Resolved real version compatibility challenges across the stack (Node, Angular CLI, NuGet)
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
----
+```bash
+ng generate component component-name
+```
 
-## 📚 Module Context
-Built as part of **INF 354 – Internet Programming** at the University of Pretoria (2025).
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
----
+```bash
+ng generate --help
+```
 
-## 👩🏽‍💻 Author
-**Maria Malebo Maleka** — [LinkedIn](https://linkedin.com/in/maria-malebo-maleka-5a405635b)
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
